@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #ff9d9d;
+    color: white;
+    text-align: center;
+}
+
+#secret {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+
+    width: 200px;
+    height: 100px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0.05;
+}
+
+#secret:hover {
+    opacity: 0.3;
+    background: #00ff00;
+    border-radius: 5%;
+}
