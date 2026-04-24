@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chemuzum</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #1f1f2e, #0f0f18);
+            color: white;
+            text-align: center;
+        }
+
+        /* текст */
+        h1 {
+            margin-top: 100px;
+            font-size: 26px;
+            line-height: 1.6;
+        }
+
+        /* кнопка */
+        form {
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+        }
+    </style>
+
+    <script>
+        function saveSkip() {
+            localStorage.setItem("skipGame", "true");
+        }
+    </script>
+</head>
+<body>
+<h1>Եթե պիտի ասես "կարո՞ղա գիտես ծնունդդ ա"<br>Հիշացնեմ, որ ՀԱ 😁<br>
+    <p style="color: red">Տակ շտո հետ գնացիր անցնելու!</p></h1>
+ <form action="index.html" onsubmit="saveSkip()">
+     <button type="submit">Հետ գնալ</button>
+ </form>
+</body>
+</html>
